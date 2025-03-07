@@ -39,9 +39,15 @@ namespace HPDC_Help_Center
                 if(key != null)
                 {
                     string prodName = key.GetValue("ProductName") as string;
-                    string releaseNo = key.GetValue("ReleaseId") as string;
-                    string buildNo = key.GetValue("CurrentBuild") as string;
-                    osVer = $"{prodName} (Build Number: {buildNo}, Release No: {releaseNo})";
+                    string releaseNo = key.GetValue("DisplayVersion") as string;
+                    string currentBuild = key.GetValue("CurrentBuild") as string;
+                    string edition = key.GetValue("EditionID") as string;
+                    if(int.TryParse(currentBuild, out int buildNo))
+                    {
+                        prodName = buildNo >= 22000 ? "Windows 11" : prodName;
+                    }
+                    prodName = $"{prodName} {edition}";
+                    osVer = $"{prodName} (Release No: {releaseNo})";
                 }
             }
             return osVer;
