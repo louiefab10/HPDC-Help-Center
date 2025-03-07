@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35806.99 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HPDC Help Center", "HPDC Help Center.csproj", "{2904F4CF-14FB-4759-8F8C-495885CC2937}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2904F4CF-14FB-4759-8F8C-495885CC2937}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2904F4CF-14FB-4759-8F8C-495885CC2937}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2904F4CF-14FB-4759-8F8C-495885CC2937}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2904F4CF-14FB-4759-8F8C-495885CC2937}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C75C0C0D-FA51-4A90-8CBB-7C8157DBD5D6}
+	EndGlobalSection
+EndGlobal
