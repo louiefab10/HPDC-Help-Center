@@ -35,13 +35,13 @@
             this.labelPCName = new MetroFramework.Controls.MetroLabel();
             this.labelOSVersion = new MetroFramework.Controls.MetroLabel();
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
+            this.labelGreeting = new MetroFramework.Controls.MetroLabel();
             this.SuspendLayout();
             // 
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
             this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.metroLabel1.Location = new System.Drawing.Point(74, 108);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(101, 25);
@@ -63,7 +63,6 @@
             // 
             this.metroLabel3.AutoSize = true;
             this.metroLabel3.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel3.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.metroLabel3.Location = new System.Drawing.Point(74, 158);
             this.metroLabel3.Name = "metroLabel3";
             this.metroLabel3.Size = new System.Drawing.Size(148, 25);
@@ -86,7 +85,7 @@
             this.labelOSVersion.AutoSize = true;
             this.labelOSVersion.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.labelOSVersion.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.labelOSVersion.Location = new System.Drawing.Point(228, 215);
+            this.labelOSVersion.Location = new System.Drawing.Point(228, 213);
             this.labelOSVersion.Name = "labelOSVersion";
             this.labelOSVersion.Size = new System.Drawing.Size(114, 25);
             this.labelOSVersion.TabIndex = 5;
@@ -96,18 +95,28 @@
             // 
             this.metroLabel4.AutoSize = true;
             this.metroLabel4.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel4.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel4.Location = new System.Drawing.Point(74, 215);
+            this.metroLabel4.Location = new System.Drawing.Point(74, 213);
             this.metroLabel4.Name = "metroLabel4";
             this.metroLabel4.Size = new System.Drawing.Size(103, 25);
             this.metroLabel4.TabIndex = 4;
             this.metroLabel4.Text = "OS Version:";
+            // 
+            // labelGreeting
+            // 
+            this.labelGreeting.AutoSize = true;
+            this.labelGreeting.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.labelGreeting.Location = new System.Drawing.Point(477, 29);
+            this.labelGreeting.Name = "labelGreeting";
+            this.labelGreeting.Size = new System.Drawing.Size(106, 25);
+            this.labelGreeting.TabIndex = 6;
+            this.labelGreeting.Text = "metroLabel2";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.labelGreeting);
             this.Controls.Add(this.labelOSVersion);
             this.Controls.Add(this.metroLabel4);
             this.Controls.Add(this.labelPCName);
@@ -118,7 +127,6 @@
             this.Name = "Form1";
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "HPDC Help Center";
-            this.TextAlign = MetroFramework.Forms.MetroFormTextAlign.Center;
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -132,6 +140,7 @@
         private MetroFramework.Controls.MetroLabel labelPCName;
         private MetroFramework.Controls.MetroLabel labelOSVersion;
         private MetroFramework.Controls.MetroLabel metroLabel4;
+        private MetroFramework.Controls.MetroLabel labelGreeting;
     }
 }
 

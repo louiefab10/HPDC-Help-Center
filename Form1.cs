@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Win32;
+using System.DirectoryServices.AccountManagement;
 
 namespace HPDC_Help_Center
 {
@@ -29,6 +30,7 @@ namespace HPDC_Help_Center
                     .ToString();
             labelPCName.Text = Environment.MachineName;
             labelOSVersion.Text = OSVersion();
+            labelGreeting.Text = $"Hi, {GetUsername()}";
         }
 
         public static string OSVersion()
@@ -51,6 +53,26 @@ namespace HPDC_Help_Center
                 }
             }
             return osVer;
+        }
+
+        public static string GetUsername()
+        {
+            string userName = "";
+            try
+            {
+                using (PrincipalContext context = new PrincipalContext(ContextType.Domain))
+                {
+                    UserPrincipal user = UserPrincipal.Current;
+                    userName = user.DisplayName;
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            return userName;
+
         }
     }
 }
